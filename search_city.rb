@@ -15,7 +15,7 @@ search_hash = {
   property_type: 'single_family',
   homehome_size_min: 1250
 }
-uri.query = URI.encode_www_form(search_hash))
+uri.query = URI.encode_www_form(search_hash)
 
 
 http = Net::HTTP.new(uri.host, uri.port)
