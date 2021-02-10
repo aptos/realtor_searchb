@@ -1,0 +1,12 @@
+{
+   "_id": "_design/first",
+   "_rev": "1-923764202093be9770ba5a24a556a2f9",
+   "language": "javascript",
+   "views": {
+       "test": {
+           "map": "function(doc) {\n  emit(null, doc);\n}"
+       }
+   }
+}
+
+puts @db.view('first/test')['rows'].inspect
